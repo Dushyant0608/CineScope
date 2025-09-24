@@ -10,7 +10,7 @@ const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
 /* Core Fetch Function */
 async function fetchJson(path, params = {}, abortKey = null) {
   const url = new URL(TMDB_BASE + path);
-  url.searchParams.set('api_key', API_KEY);
+  //url.searchParams.set('api_key', API_KEY);
   
   Object.entries(params).forEach(([k, v]) => {
     if (Array.isArray(v)) url.searchParams.set(k, v.join(','));
