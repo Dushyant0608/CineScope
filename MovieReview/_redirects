@@ -1,1 +1,0 @@
-/api/* https://api.themoviedb.org/3/:splat?api_key=${TMDB_API_KEY}  200
